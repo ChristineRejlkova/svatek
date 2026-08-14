@@ -6,9 +6,10 @@ import SuccessContinue from './SuccessContinue'
 const CORRECT = 'Haty2026.'
 
 /**
- * Horizontal entries. `keyIndex` is the letter that sits in the highlighted
- * tajenka column. KONFETY has no "0", so a dedicated tajenka cell is prefixed.
- * 2026 contributes both "2" (in-column) and "6" (extra tajenka row).
+ * Horizontal entries. `keyIndex` is the letter in the highlighted tajenka column.
+ * Reading that column top → bottom spells Haty2026.
+ * KONFETY has no 0, so a tajenka cell is prefixed.
+ * 2026 contributes 2 in-row and 6 on the extra tajenka row.
  */
 const ENTRIES = [
   {
@@ -20,19 +21,19 @@ const ENTRIES = [
   {
     num: 2,
     clue: 'Oblíbený ranní nápoj, kterým začíná den',
-    cells: ['K', 'Á', 'V', 'A'],
+    cells: ['K', 'Á', 'V', 'a'],
     keyIndex: 3,
   },
   {
     num: 3,
     clue: 'Věty, které neřekneš ven',
-    cells: ['T', 'A', 'J', 'E', 'M', 'S', 'T', 'V', 'Í'],
+    cells: ['t', 'A', 'J', 'E', 'M', 'S', 'T', 'V', 'Í'],
     keyIndex: 0,
   },
   {
     num: 4,
-    clue: 'Přívěsek v tvém dekoltu',
-    cells: ['S', 'Y', 'M', 'B', 'O', 'L'],
+    clue: 'Přívěsek v tvém dekoltu/ Nemám hlas, a přesto mluvím.Nesu význam, ikonu či tajné znamení,v šifrách a kódování jsem tvé vedení.',
+    cells: ['S', 'y', 'M', 'B', 'O', 'L'],
     keyIndex: 1,
   },
   {
@@ -43,8 +44,8 @@ const ENTRIES = [
   },
   {
     num: 6,
-    clue: 'Papírky, co létají při oslavě jen',
-    cells: ['0', 'K', 'O', 'N', 'F', 'E', 'T', 'Y'],
+    clue: 'Číslo, kterým nejde dělit',
+    cells: ['0'],
     keyIndex: 0,
   },
   {
@@ -55,6 +56,13 @@ const ENTRIES = [
   },
   {
     num: 8,
+    clue: 'Čislo tvého dnešního parkovacího místa',
+    cells: ['6','8'],
+    keyIndex: 0,
+    ghost: true,
+  },
+  {
+    num: 9,
     clue: 'Znaménko na konec věty',
     cells: ['.'],
     keyIndex: 0,

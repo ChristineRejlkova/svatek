@@ -9,7 +9,7 @@ import PuzzleStage from './components/PuzzleStage'
 import FinaleStage from './components/FinaleStage'
 
 /** Set to `false` before sharing the real gift link */
-const TEST_MODE = false
+const TEST_MODE = true
 
 const NEXT_STAGE = {
   1: 2,
